@@ -4,7 +4,7 @@ import { Product } from '../entity/Product';
 import { ProductRepository } from '../repository/ProductRepository';
 import { ICreateProduct } from '../dtos/createProduct';
 
-export class ProductServices {
+export class ProductCreateServices {
   private productRepository: Repository<Product>;
 
   constructor() {
