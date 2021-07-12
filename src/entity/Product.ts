@@ -10,7 +10,7 @@ import { v4 as uuid } from 'uuid';
 @Entity('products')
 export class Product {
   @PrimaryColumn()
-  id: string;
+  readonly id: string;
 
   @Column()
   name: string;
@@ -19,10 +19,10 @@ export class Product {
   category: string;
 
   @Column()
-  quatity: string;
+  quantity: number;
 
   @Column()
-  price: string;
+  price: number;
 
   @CreateDateColumn({ name: 'created_at' })
   createad_At: Date;

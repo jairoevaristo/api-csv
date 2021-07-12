@@ -21,7 +21,7 @@ export class CreateData1626112396735 implements MigrationInterface {
         },
         {
           name: 'quantity',
-          type: 'varchar'
+          type: 'integer'
         },
         {
           name: 'price',
