@@ -29,6 +29,12 @@
   yarn typeorm migrantion:run
  ```
 
+ 4 - Inicie o servidor
+
+ ```bash
+  yarn start:dev
+ ```
+
  ## Using
 
  Esta API foi desenvolvida para receber um arquivo .csv e salvar as informações contidas nele.
@@ -43,7 +49,7 @@
 
  A API executará na porta `3000`, para ter acesso as rotas é preciso colocar um prefixo antes do recurso, `/api/v1`.
 
- - Rota responsável pelo upload, recebe o arquivo .csv [POST].
+ - Rota responsável pelo upload, recebe o arquivo .csv, envie o arquivo, com o nome do campo `uploaded_file` [POST].
 
  ```bash
   localhost:3000/api/v1/upload/send
