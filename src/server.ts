@@ -9,4 +9,4 @@ server.use(cors()); //allow all origins
 server.use(express.json());
 server.use('/api/v1', router);
 
-server.listen(5000, () => console.log('Server is running'));
+server.listen(3000, () => console.log('Server is running'));

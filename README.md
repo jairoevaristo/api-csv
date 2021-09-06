@@ -66,7 +66,7 @@
  Como padrão, o CORS está permitindo compartilhar recursos com qualquer origin. Caso deseje limitar o acesso basta acrescentar alterar adicionando as configurações conforme exemplo abaixo.
 
   ```bash
-  const allowedOrigins = ['http://localhost:3000'];
+  const allowedOrigins = ['http://localhost:5000'];
 
   const options: cors.CorsOptions = {
     origin: allowedOrigins
