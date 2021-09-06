@@ -26,7 +26,7 @@
 3 - Execute as migrations
 
  ```bash
-  yarn typeorm migrantion:run
+  yarn typeorm migration:run
  ```
 
  4 - Inicie o servidor
@@ -47,7 +47,7 @@
 
  ## Routes
 
- A API executará na porta `3000`, para ter acesso as rotas é preciso colocar um prefixo antes do recurso, `/api/v1`.
+ A API executará na porta `5000`, para ter acesso as rotas é preciso colocar um prefixo antes do recurso, `/api/v1`.
 
  - Rota responsável pelo upload, recebe o arquivo .csv, envie o arquivo, com o nome do campo `uploaded_file` [POST].
 
@@ -58,4 +58,19 @@
 
  ```bash
   localhost:3000/api/v1/upload/
+ ```
+
+ - Permitir CORS (Cross-origin Resource Sharing):
+
+ 
+ Como padrão, o CORS está permitindo compartilhar recursos com qualquer origin. Caso deseje limitar o acesso basta acrescentar alterar adicionando as configurações conforme exemplo abaixo.
+
+  ```bash
+  const allowedOrigins = ['http://localhost:3000'];
+
+  const options: cors.CorsOptions = {
+    origin: allowedOrigins
+  };
+
+  server.use(cors(options));
  ```
